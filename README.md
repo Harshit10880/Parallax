@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="assets/banner.png" alt="Parallax Banner" width="100%" />
-</div>
-
 <h1 align="center">⚡ Parallax</h1>
 
 <p align="center">
@@ -76,41 +72,6 @@ No existing tool combines all three of: **simultaneous multi-model execution**, 
 
 ---
 
-## 🏗️ Architecture
-
-```
-┌─────────────────────────────────────────────────┐
-│                   Desktop App                    │
-│           (Tauri · Rust · React)                 │
-│  ┌──────────┐  ┌──────────┐  ┌───────────────┐  │
-│  │  Battle   │  │  Single  │  │   Analytics   │  │
-│  │   Mode    │  │   Mode   │  │   Dashboard   │  │
-│  └────┬─────┘  └────┬─────┘  └───────┬───────┘  │
-│       └──────────┬──┘                │           │
-│                  ▼                   │           │
-│        ┌────────────────┐            │           │
-│        │  Merge Engine  │            │           │
-│        └────────────────┘            │           │
-└───────────────────┬───────────────────┘           │
-                   │  REST API                     │
-┌────────────────────▼────────────────────────────┐  │
-│              Backend / Orchestrator            │  │
-│      (Python · REST · PostgreSQL)              │  │
-│  ┌────────────┐  ┌──────────┐  ┌───────────┐  │  │
-│  │ Task Queue │  │  Router  │  │  History   │  │  │
-│  │            │  │  (ML)    │  │   Store    │  │  │
-│  └────────────┘  └──────────┘  └───────────┘     │  │
-└──────────────────┬─────────────────────────────┘  │
-                   │                                │
-     ┌─────────────┼─────────────┐                   │
-     ▼             ▼             ▼                    │
-  ┌──────┐    ┌──────┐     ┌──────┐                  │
-  │Claude│    │ GPT  │     │Gemini│  ...              │
-  └──────┘    └──────┘     └──────┘                  │
-```
-
----
-
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
@@ -178,20 +139,6 @@ npm run tauri dev
 - **Students** — explore how different models approach the same problem
 - **Freelancers** — one tool, multiple model perspectives, no separate subscriptions
 - **Developers / Engineers** — catch what a single model would miss, save time switching contexts
-
----
-
-## 🤝 Contributing
-
-We're in early development and open to contributions! Here's how to get involved:
-
-1. **Fork** the repository
-2. Create a **feature branch** (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. Open a **Pull Request**
-
-Please read our [contributing guidelines](CONTRIBUTING.md) before starting.
 
 ---
 
