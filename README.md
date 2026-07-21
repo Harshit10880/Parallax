@@ -18,7 +18,7 @@
 
 ## 📖 Overview
 
-**Parallax** is a lightweight desktop IDE that sends a single coding task to **multiple large language models in parallel** — think Claude, GPT, and Gemini — and displays their responses **side by side** on a comparison dashboard. Pick the best parts of each, merge them into your codebase, and let the platform learn **which model wins for which kind of task** over time.
+**Parallax** is a desktop IDE that sends a single coding task to **multiple large language models in parallel** — think Claude, GPT, and Gemini — and displays their responses **side by side** on a comparison dashboard. Pick the best parts of each, merge them into your codebase, and let the platform learn **which model wins for which kind of task** over time.
 
 > No single model is best at everything. Why settle for one opinion?
 
