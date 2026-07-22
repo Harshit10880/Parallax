@@ -29,6 +29,15 @@ venv/
 .env.local
 .env.*.local
 
+# Build output
+dist/
+
+# Generated previews / helper scripts
+icon-preview.png
+analyze_icon.py
+debug_logo.py
+preview_icon.py
+
 # IDE
 .vscode/
 .idea/
